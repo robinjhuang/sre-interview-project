@@ -179,7 +179,7 @@ Please complete the following tasks:
 - **Requirements**: Add resource limits, health checks, persistent volumes
 
 ### 3. Deploy to GCP/Azure/AWS
-- **Task**: Deploy the Cloud using Infrastructure as Code. eg. Terraform, Anisible
+- **Task**: Deploy the Cloud using Infrastructure as Code. eg. Terraform, Ansible
 - **Requirements**: Deploy in one command locally.
 
 ### 4. Troubleshooting

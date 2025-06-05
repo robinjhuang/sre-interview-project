@@ -169,7 +169,7 @@ make monitor
 
 Please complete the following tasks:
 
-### 1. System Analysis (15 minutes)
+### 1. System Analysis
 - Review the architecture and identify potential bottlenecks
 - Discuss monitoring strategy and key metrics
 - Analyze failure modes and recovery mechanisms

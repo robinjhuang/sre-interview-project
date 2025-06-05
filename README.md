@@ -165,6 +165,43 @@ make clean
 make monitor
 ```
 
+## Interview Tasks
+
+Please complete the following tasks:
+
+### 1. System Analysis (15 minutes)
+- Review the architecture and identify potential bottlenecks
+- Discuss monitoring strategy and key metrics
+- Analyze failure modes and recovery mechanisms
+
+### 2. Infrastructure as Code
+- **Task**: Convert Docker Compose to Kubernetes manifests
+- **Requirements**: Add resource limits, health checks, persistent volumes
+
+### 3. Deploy to GCP/Azure/AWS
+- **Task**: Deploy the Cloud using Infrastructure as Code. eg. Terraform, Anisible
+- **Requirements**: Deploy in one command locally.
+
+### 4. Troubleshooting
+- **Scenario**: Messages are backing up in the queue
+- **Tasks**: Investigate the issue, identify root cause, propose solutions
+- **Tools**: Use docker logs, RabbitMQ management UI, metrics endpoints
+
+### 5. Scaling & Performance
+- **Task**: Handle 10x traffic increase
+- **Considerations**: Horizontal scaling, resource limits, queue management
+- **Implementation**: Scale consumer service, tune parameters
+
+### 6. Monitoring & Alerting
+- **Task**: Design alerting rules for the system
+- **Metrics**: Identify critical metrics to monitor
+- **SLIs/SLOs**: Define service level indicators and objectives
+
+
+### 6. Bonus: Scaling & Optimizations
+- **Task**: We want to scale the service horizontally. We also want to optimize the service in ways like: give the next job to the node that already has a model loaded into VRAM. Would how we design for this?
+
+
 ## Metrics Available
 
 ### Producer Metrics

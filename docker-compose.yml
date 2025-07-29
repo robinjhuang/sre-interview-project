@@ -24,7 +24,7 @@ services:
       dockerfile: producer/Dockerfile
     container_name: sre-producer
     ports:
-      - "5000:5000"
+      - "5001:5000"
     environment:
       - RABBITMQ_HOST=rabbitmq
       - RABBITMQ_PORT=5672
@@ -39,7 +39,6 @@ services:
     build:
       context: .
       dockerfile: consumer/Dockerfile
-    container_name: sre-consumer
     environment:
       - RABBITMQ_HOST=rabbitmq
       - RABBITMQ_PORT=5672
@@ -49,8 +48,6 @@ services:
       rabbitmq:
         condition: service_healthy
     restart: unless-stopped
-    deploy:
-      replicas: 2
 
 volumes:
   rabbitmq_data:
